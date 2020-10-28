@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">zpi</string>
+    <string name="editTextEmail">E-MAIL</string>
+    <string name="editTextPassword">HASŁO</string>
+    <string name="buttonLogin">ZALOGUJ SIĘ</string>
+    <string name="textViewAlreadyReg">JESTEŚ JESZCZE NIEZAREJESTROWANY?</string>
+    <string name="buttonGoRegister">ZAŁÓŻ KONTO</string>
+    <string name="textViewForgot">ZAPOMNIAŁEM HASŁA</string>
+    <string name="textViewRegister">REJESTRACJA</string>
+    <string name="editTextUsername">NAZWA UŻYTKOWNIKA</string>
+    <string name="editTextRepPassword">POWTÓRZ HASŁO</string>
+    <string name="buttonRegister">ZAREJESTRUJ</string>
+    <string name="textViewReset">ZRESETUJ SWOJE HASŁO</string>
+    <string name="buttonReset">ZRESETUJ</string>
+</resources>

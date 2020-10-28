@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "519928373919",
+    "firebase_url": "https://zpigr3-bdde7.firebaseio.com",
+    "project_id": "zpigr3-bdde7",
+    "storage_bucket": "zpigr3-bdde7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519928373919:android:b9c91b2bc605db340e78aa",
+        "android_client_info": {
+          "package_name": "com.example.zpi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519928373919-o4biderraa6ad2j9h85ce966pdefo2pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeIa4L5JKtPjOQfVbmE7k14X5T5oUtb1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519928373919-o4biderraa6ad2j9h85ce966pdefo2pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

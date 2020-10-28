@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/maiandra"
+                android:text="@string/textViewRegister"
+                android:textColor="#4E5E4A"
+                android:textSize="55sp" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="326dp"
+            android:layout_height="53dp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="@font/maiandra"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextUsername"
+            android:inputType="textPersonName"
+            android:textColor="#506C56"
+            android:textColorHint="#88A882"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="326dp"
+            android:layout_height="53dp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="@font/maiandra"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextEmail"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="#506C56"
+            android:textColorHint="#88A882"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="326dp"
+            android:layout_height="53dp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="@font/maiandra"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextPassword"
+            android:inputType="textPassword"
+            android:textColor="#506C56"
+            android:textColorHint="#88A882"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextRepPassword"
+            android:layout_width="326dp"
+            android:layout_height="53dp"
+            android:background="@drawable/edittext_bg"
+            android:fontFamily="@font/maiandra"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/editTextRepPassword"
+            android:inputType="textPassword"
+            android:textColor="#506C56"
+            android:textColorHint="#88A882"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="240dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_login_button"
+            android:fontFamily="@font/leelawui"
+            android:text="@string/buttonRegister"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#E3FFDD"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewForgot"
+            android:layout_marginTop="2dp"
+            android:visibility="invisible" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
