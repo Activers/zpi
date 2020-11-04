@@ -19,5 +19,6 @@
     <string name="textViewLogo">MÓJ ZWIERZAK</string>
     <string name="buttonMyProfile">MÓJ PROFIL</string>
     <string name="buttonKnowledge">WIEDZA</string>
-    <string name="buttonSettings">USTAWIENIA</string>
+    <string name="buttonVet">WETERYNARZ</string>
+    <string name="buttonLogout">WYLOGUJ SIĘ</string>
 </resources>

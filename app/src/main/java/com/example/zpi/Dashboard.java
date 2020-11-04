@@ -21,7 +21,7 @@ public class Dashboard extends AppCompatActivity {
 
         MyProfile = findViewById(R.id.buttonMyProfile);
         Knowledge = findViewById(R.id.buttonKnowledge);
-        Settings = findViewById(R.id.buttonSettings);
+        Settings = findViewById(R.id.buttonVet);
 
         MyProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +44,7 @@ public class Dashboard extends AppCompatActivity {
         Settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Settings.class));
+                startActivity(new Intent(getApplicationContext(), Vet.class));
                 overridePendingTransition(R.anim.slide_in_right,
                         R.anim.slide_out_left);
             }
