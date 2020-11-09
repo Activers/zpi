@@ -94,9 +94,6 @@ public class Register extends AppCompatActivity {
                         //else {
                         //   Toast.makeText(Register.this, "Błąd rejestracji! Spróbuj ponownie później.", Toast.LENGTH_SHORT).show();
                         //}
-                        if(fAuth.getCurrentUser() != null){
-                            Toast.makeText(Register.this, "Takie konto już istnieje!", Toast.LENGTH_SHORT).show();
-                        }
                     }
                 });
             }

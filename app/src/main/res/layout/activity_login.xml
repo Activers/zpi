@@ -43,7 +43,7 @@
             android:layout_height="53dp"
             android:background="@drawable/edittext_bg"
             android:fontFamily="@font/maiandra"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:autofillHints=""
             android:ems="10"
@@ -71,13 +71,21 @@
             android:textColorHint="#88A882"
             android:textSize="20sp" />
 
-
+        <CheckBox
+            android:id="@+id/checkBoxRememberMe"
+            android:layout_width="326dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/checkBoxRememberMe"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#04514F"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/buttonLogin"
             android:layout_width="270dp"
             android:layout_height="57dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/bg_login_button"
             android:fontFamily="@font/leelawui"
             android:text="@string/buttonLogin"

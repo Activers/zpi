@@ -1,39 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_dashboard"
-    android:fillViewport="true">
+    android:background="@mipmap/bg_profile"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10">
+
 
     <LinearLayout
-        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:focusable="false"
-        android:focusableInTouchMode="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:weightSum="10">
+        android:padding="15dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="165dp"
-            android:layout_marginBottom="30dp"
-            android:padding="10dp">
-
-
-        </RelativeLayout>
-
+        <ImageView
+            android:id="@+id/ImageViewIconBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/back_line"
+            tools:ignore="RtlHardcoded" />
 
 
+        <FrameLayout
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageViewAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="0dp"
+            android:src="#E9FAC4"
+            app:civ_border_color="#548C54"
+            app:civ_border_width="3dp"
+            android:layout_gravity="bottom|center_horizontal"/>
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageViewAddAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/bg_add_avatar"
+                app:civ_border_color="#23613C"
+                app:civ_border_width="3dp"
+                android:layout_gravity="bottom|right"
+                tools:ignore="RtlHardcoded" />
 
+        </FrameLayout>
 
+        <TextView
+            android:id="@+id/TextViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/maiandra"
+            android:gravity="left"
+            android:paddingHorizontal="20dp"
+            android:text="NAZWA UŻYTKOWNIKA"
+            android:textStyle="bold"
+            android:textColor="#506C56"
+            android:textSize="21sp"
+            tools:ignore="RtlHardcoded"
+            />
+
+        <TextView
+            android:id="@+id/TextViewMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/maiandra"
+            android:gravity="left"
+            android:paddingHorizontal="20dp"
+            android:text="ADRES E-MAIL"
+            android:textColor="#506C56"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/TextViewCountAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/maiandra"
+            android:gravity="left"
+            android:paddingHorizontal="20dp"
+            android:text="LICZBA ZWIERZAKÓW: "
+            android:textColor="#506C56"
+            android:textSize="17sp"
+            tools:ignore="RtlHardcoded" />
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#548C54" />
+
+
+            <ImageButton
+                android:id="@+id/ImageButtonAddAnimal"
+                android:layout_width="490dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_add_animal"
+                tools:ignore="InefficientWeight">
+            </ImageButton>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
