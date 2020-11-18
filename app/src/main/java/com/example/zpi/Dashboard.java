@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -18,7 +19,7 @@ public class Dashboard extends AppCompatActivity {
 
     final String TAG = "Dashboard";
 
-    Button MyProfile,Knowledge,Settings,Logout;
+    Button MyProfile,Knowledge,Vet,Logout;
     Animation AnimPull, AnimPush;
 
 
@@ -29,7 +30,7 @@ public class Dashboard extends AppCompatActivity {
 
         MyProfile = findViewById(R.id.buttonMyProfile);
         Knowledge = findViewById(R.id.buttonKnowledge);
-        Settings = findViewById(R.id.buttonVet);
+        Vet = findViewById(R.id.buttonVet);
         Logout = findViewById(R.id.buttonLogout);
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
@@ -64,13 +65,15 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-        Settings.setOnTouchListener(new View.OnTouchListener() {
+        Vet.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getAction()==MotionEvent.ACTION_DOWN) {
-                    Settings.startAnimation(AnimPull);
+                    Vet.startAnimation(AnimPull);
                 }else if(event.getAction()==MotionEvent.ACTION_UP){
-                startActivity(new Intent(getApplicationContext(), Vet.class));
+                    String uri = "https://www.google.com/maps/search/?api=1&query=weterynarz";
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                    startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right,
                         R.anim.slide_out_left);}
                 return true;
