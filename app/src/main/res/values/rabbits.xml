@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayRabbits">
+        <item>BARANEK</item>
+        <item>ANGOR</item>
+        <item>TEDDY</item>
+        <item>LEW MINIATURKA</item>
+        <item>REX</item>
+    </string-array>
+</resources>

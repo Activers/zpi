@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayReptiles">
+        <item>WYBIERZ GADA</item>
+        <item>WĄŻ</item>
+        <item>ZÓŁW</item>
+        <item>JASZCZURKA</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayMammals">
+        <item>WYBIERZ SSAKA</item>
+        <item>PIES</item>
+        <item>KOT</item>
+        <item>KRÓLIK</item>
+        <item>CHOMIK</item>
+        <item>SZYNSZYLA</item>
+        <item>SZCZUR</item>
+        <item>MYSZ</item>
+        <item>ŚWINKA MORSKA</item>
+        <item>JEŻ</item>
+    </string-array>
+</resources>

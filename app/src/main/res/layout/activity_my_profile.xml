@@ -99,9 +99,15 @@
             android:textSize="17sp"
             tools:ignore="RtlHardcoded" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#548C54" />
+
     </LinearLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -114,11 +120,12 @@
             android:orientation="vertical">
 
 
-            <View
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMyProfile"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="#548C54" />
+                android:nestedScrollingEnabled="false"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
 
 
             <ImageButton
@@ -133,7 +140,7 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
 

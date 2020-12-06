@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayDogs">
+        <item>ALASKAN MALAMUTE</item>
+        <item>BERNEŃSKI PIES PASTERSKI</item>
+        <item>BERNARDYN</item>
+        <item>BICHON FRISE</item>
+        <item>BULTERIER</item>
+        <item>CHOW CHOW</item>
+        <item>DALMATYŃCZYK</item>
+        <item>OWCZAREK MAREMMA</item>
+        <item>HUSKY SYBERYJSKI</item>
+        <item>GOLDER RETRIEVER</item>
+        <item>INNA</item>
+    </string-array>
+</resources>

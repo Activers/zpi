@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayGuinea">
+        <item>KAWIA DOMOWA</item>
+        <item>SKINNY</item>
+        <item>AMERCIAN</item>
+        <item>ABISYŃSKA</item>
+        <item>CRESTED</item>
+        <item>SOMALI</item>
+        <item>CURLY</item>
+        <item>RIDGEBACK</item>
+        <item>TEDDY</item>
+        <item>REX</item>
+        <item>PERUWIANKA</item>
+        <item>BOUNCE</item>
+        <item>SHELTIE</item>
+        <item>TEXEL</item>
+        <item>CORONET</item>
+        <item>ANGORA</item>
+        <item>LUNKARYA</item>
+    </string-array>
+</resources>

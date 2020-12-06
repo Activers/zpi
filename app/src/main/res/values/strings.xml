@@ -25,6 +25,12 @@
     <!--activity_AddAnimal-->
     <string name="TextViewAddAnimal">DODAJ ZWIERZAKA</string>
     <string name="ButtonCancel">ANULUJ</string>
+    <!--activity_AddMammals,Amphibians,Birds,Invertebrates,Reptiles-->
+    <string name="editTextName">IMIĘ ZWIERZAKA</string>
+    <string name="editTextWage">PODAJ WAGĘ ZWIERZAKA</string>
+    <string name="editTextDate">WYBIERZ DATĘ ADOPCJI</string>
+    <string name="editTextBio">NOTATKI</string>
+    <string name="ButtonAdd">ZAPISZ</string>
     <!--preferences-->
     <string name="autoLoginPreferenceName">autoLogin</string>
 </resources>

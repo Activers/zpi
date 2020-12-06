@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayHamsters">
+        <item>DŻUNGALSKI</item>
+        <item>SYRYJSKI</item>
+        <item>ROBOROWSKIEGO</item>
+        <item>CHIŃSKI</item>
+        <item>CAMPBELLA</item>
+
+    </string-array>
+</resources>

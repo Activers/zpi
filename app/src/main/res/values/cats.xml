@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayCats">
+        <item>DACHOWIEC</item>
+        <item>BRYTYJSKI KROTKOWŁOSY</item>
+        <item>CORNISH REX</item>
+        <item>DOŃSKI SFINKS</item>
+        <item>JAPOŃSKI BOBTAIL</item>
+        <item>KORAT</item>
+        <item>EGIPSKI MAU</item>
+        <item>HIMALAJSKI</item>
+        <item>TIFFANIE</item>
+        <item>ŚWIĘTY BIRMAŃSKI</item>
+        <item>INNA</item>
+    </string-array>
+</resources>

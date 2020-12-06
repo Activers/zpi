@@ -39,80 +39,170 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
             android:padding="15dp">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ImageViewDog"
+                android:id="@+id/ImageViewMammals"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
-                android:src="#E9FAC4"
+                android:src="@drawable/ssaki2"
+                app:civ_border_color="#619F60"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/TextViewAddAnimal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/maiandra"
+                android:text="SSAKI"
+                android:textColor="#506C56"
+                android:textSize="22sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageViewReptiles"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/gady2"
+                app:civ_border_color="#619F60"
+                app:civ_border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/TextViewAddAnimal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="GADY"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageViewBirds"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/ptaki2"
                 app:civ_border_color="#619F60"
                 app:civ_border_width="1dp"/>
 
+                <TextView
+                    android:id="@+id/TextViewAddAnimal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="PTAKI"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ImageViewCat"
+                android:id="@+id/ImageViewAmphibians"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
-                android:src="#E9FAC4"
+                android:src="@drawable/plazy2"
                 app:civ_border_color="#619F60"
                 app:civ_border_width="1dp"/>
+
+                <TextView
+                    android:id="@+id/TextViewAddAnimal5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="PŁAZY"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:padding="15dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ImageViewBird"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="0dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:src="#E9FAC4"
-                app:civ_border_color="#619F60"
-                app:civ_border_width="1dp"/>
+                android:orientation="vertical" >
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ImageViewReptile"
+                android:id="@+id/ImageViewInvertebrates"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                android:src="#E9FAC4"
+                android:src="@drawable/bezkregowce2"
                 app:civ_border_color="#619F60"
                 app:civ_border_width="1dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="15dp">
+                <TextView
+                    android:id="@+id/TextViewAddAnimal6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="BEZKRĘGOWCE"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ImageViewAmphibian"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                android:src="#E9FAC4"
-                app:civ_border_color="#619F60"
-                app:civ_border_width="1dp"/>
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ImageViewIvertebrate"
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                android:src="#E9FAC4"
-                app:civ_border_color="#619F60"
-                app:civ_border_width="1dp"/>
         </LinearLayout>
 
         <Button
@@ -127,6 +217,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#E3FFDD"
             android:textSize="24sp" />
+
 
     </LinearLayout>
 

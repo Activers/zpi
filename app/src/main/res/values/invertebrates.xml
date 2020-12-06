@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayInvertebrates">
+        <item>WYBIERZ BEZKRĘGOWCA</item>
+        <item>PATYCZAK</item>
+        <item>MODLISZKA</item>
+        <item>PAJĄK</item>
+    </string-array>
+</resources>

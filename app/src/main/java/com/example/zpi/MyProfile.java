@@ -3,6 +3,8 @@ package com.example.zpi;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.content.Context;
@@ -28,6 +30,8 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyProfile extends AppCompatActivity {
@@ -35,6 +39,7 @@ public class MyProfile extends AppCompatActivity {
     ImageView IconBack;
     CircleImageView Avatar,AddAvatar;
     TextView Username,Mail,CountAnimal;
+    RecyclerView recyclerView;
     ImageButton AddAnimal;
     FirebaseAuth fAuth;
     StorageReference fStorage;
@@ -53,9 +58,9 @@ public class MyProfile extends AppCompatActivity {
         Mail = findViewById(R.id.TextViewMail);
         CountAnimal = findViewById(R.id.TextViewCountAnimal);
         AddAnimal = findViewById(R.id.ImageButtonAddAnimal);
+        recyclerView = findViewById(R.id.recyclerViewMyProfile);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-
 
 
         try {
@@ -139,7 +144,7 @@ public class MyProfile extends AppCompatActivity {
     }
 
     public void onBackPressed() {
-        super.onBackPressed();
+        startActivity(new Intent(getApplicationContext(),Dashboard.class));
         overridePendingTransition(R.anim.slide_in_left,
                 R.anim.slide_out_right);
     }
