@@ -11,12 +11,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class AddAnimal extends AppCompatActivity {
 
     Button Cancel;
     Animation AnimPull;
     ImageView Mammals, Reptiles, Birds, Amphibians, Invertebrates;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

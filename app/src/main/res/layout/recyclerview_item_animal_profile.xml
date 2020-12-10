@@ -7,21 +7,21 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
 
 <androidx.cardview.widget.CardView
     android:id="@+id/cardViewProfile"
     android:layout_width="match_parent"
-    android:background="#EAFBC7"
-    android:layout_height="100dp">
-    <!--app:cardBackgroundColor="#664666"-->
+    android:layout_height="100dp"
+    app:cardBackgroundColor="#EAFBC7">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/ImageViewAvatar"
+            android:id="@+id/imageViewPetAvatar"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
@@ -49,7 +49,7 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/textViewPetRase"
+                android:id="@+id/textViewPetType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

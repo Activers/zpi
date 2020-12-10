@@ -19,10 +19,15 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.auth.User;
 import com.google.firebase.storage.FirebaseStorage;
@@ -30,16 +35,23 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyProfile extends AppCompatActivity {
 
+    final String TAG = "MyProfile";
+
     ImageView IconBack;
     CircleImageView Avatar,AddAvatar;
     TextView Username,Mail,CountAnimal;
     RecyclerView recyclerView;
+    LinearLayoutManager layoutManager;
+    private ArrayList<AnimalModel> animalModelList;
+    private RecyclerAdapter recyclerAdapter;
     ImageButton AddAnimal;
     FirebaseAuth fAuth;
     StorageReference fStorage;
@@ -73,6 +85,35 @@ public class MyProfile extends AppCompatActivity {
                 }
             });
         } catch (Exception e) {}
+
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setHasFixedSize(false);
+        recyclerView.setLayoutManager(layoutManager);
+
+        animalModelList = new ArrayList<>();
+
+
+        recyclerAdapter = new RecyclerAdapter(getApplicationContext(), animalModelList);
+        recyclerView.setAdapter(recyclerAdapter);
+
+        GetProfileDataFromFirebase();
+
+        try {
+            recyclerAdapter.setOnItemClickListener(new RecyclerAdapter.OnItemClickedListener() {
+                @Override
+                public void onItemClick(int position) {
+                    Intent intent = new Intent(getApplicationContext(),AnimalProfile.class);
+                    intent.putExtra("animalName",animalModelList.get(position).getAnimalName());
+                    intent.putExtra("animalType",animalModelList.get(position).getAnimalType());
+                    intent.putExtra("animalBreed",animalModelList.get(position).getAnimalBreed());
+                    intent.putExtra("animalWeight",animalModelList.get(position).getAnimalWeight());
+                    intent.putExtra("animalDate",animalModelList.get(position).getAnimalDate());
+                    intent.putExtra("animalBio",animalModelList.get(position).getAnimalBio());
+                    startActivity(intent);
+                }
+            });
+
+        } catch (Exception e) { Log.d(TAG, "RECYCLER LISTENER ERROR: " + e); }
 
 
         AddAvatar.setOnClickListener(new View.OnClickListener() {
@@ -121,7 +162,7 @@ public class MyProfile extends AppCompatActivity {
 
     private void uploadImageToFirebase(Uri imageUri) {
 
-        final String TAG = "MyProfile";
+
         final StorageReference fileRef = fStorage.child("users/"+fAuth.getCurrentUser().getUid()+"/profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -142,6 +183,48 @@ public class MyProfile extends AppCompatActivity {
         });
 
     }
+
+    private void GetProfileDataFromFirebase() {
+        // sciaganie i ustawianie danych profilowych z bazy
+        DocumentReference usersDocRef = fStore.collection("users").document(fAuth.getCurrentUser().getUid());
+        usersDocRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    Username.setText(document.getString("name"));
+                    Mail.setText(document.getString("e-mail"));
+
+
+                    ArrayList<Map<String,String>> animalsArray = (ArrayList<Map<String,String>>) document.get("animals");
+
+
+                    for (int i=0; i < animalsArray.size(); i++) {
+                        Map<String,String> animalsMap = animalsArray.get(i);
+                        //Toast.makeText(getApplicationContext(), animalsMap.size()+"", Toast.LENGTH_SHORT).show();
+                        if (animalsMap.containsKey("breed"))
+                            animalModelList.add(new AnimalModel(animalsMap.get("name"),animalsMap.get("type"),animalsMap.get("breed"),animalsMap.get("weight"),animalsMap.get("date"),animalsMap.get("bio")));
+                        else {
+                            animalModelList.add(new AnimalModel(animalsMap.get("name"),animalsMap.get("type"),animalsMap.get("weight"),animalsMap.get("date"),animalsMap.get("bio")));
+                        }
+                    }
+
+                    CountAnimal.setText(CountAnimal.getText() + ": " + animalsArray.size());
+
+
+                } else {
+                    Log.i(TAG, "Document onComplete failure - Niepowodzenie spowodowane: ", task.getException());
+                }
+
+                recyclerView.setAdapter(recyclerAdapter); // wlozenie listy do recyclerView
+
+                //recyclerAdapter.notifyDataSetChanged();
+
+            }
+        });
+        // koniec rzeczy zwiazanych z baza
+    }
+
 
     public void onBackPressed() {
         startActivity(new Intent(getApplicationContext(),Dashboard.class));
