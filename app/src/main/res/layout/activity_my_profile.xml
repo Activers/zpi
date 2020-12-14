@@ -127,16 +127,51 @@
                 android:layout_height="wrap_content"
                 android:scrollbars="vertical" />
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="25dp"
+                app:cardBackgroundColor="#EAFBC7">
 
-            <ImageButton
-                android:id="@+id/ImageButtonAddAnimal"
-                android:layout_width="490dp"
-                android:layout_height="80dp"
-                android:layout_weight="1"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bg_add_animal"
-                tools:ignore="InefficientWeight">
-            </ImageButton>
+                <LinearLayout
+                    android:id="@+id/AddAnimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageViewPetAvatar"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/bg_add_avatar"
+                        app:civ_border_color="#548C54"
+                        app:civ_border_width="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewPetName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/maiandra"
+                            android:text="DODAJ ZWIERZAKA"
+                            android:textColor="#23613C"
+                            android:textSize="28sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
 
         </LinearLayout>
 

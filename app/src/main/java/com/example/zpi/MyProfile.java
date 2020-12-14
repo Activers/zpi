@@ -18,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,7 +53,7 @@ public class MyProfile extends AppCompatActivity {
     LinearLayoutManager layoutManager;
     private ArrayList<AnimalModel> animalModelList;
     private RecyclerAdapter recyclerAdapter;
-    ImageButton AddAnimal;
+    LinearLayout AddAnimal;
     FirebaseAuth fAuth;
     StorageReference fStorage;
     FirebaseFirestore fStore;
@@ -66,10 +67,10 @@ public class MyProfile extends AppCompatActivity {
         IconBack = findViewById(R.id.ImageViewIconBack);
         Avatar = findViewById(R.id.ImageViewAvatar);
         AddAvatar = findViewById(R.id.ImageViewAddAvatar);
+        AddAnimal = findViewById(R.id.AddAnimal);
         Username = findViewById(R.id.TextViewUsername);
         Mail = findViewById(R.id.TextViewMail);
         CountAnimal = findViewById(R.id.TextViewCountAnimal);
-        AddAnimal = findViewById(R.id.ImageButtonAddAnimal);
         recyclerView = findViewById(R.id.recyclerViewMyProfile);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -209,7 +210,7 @@ public class MyProfile extends AppCompatActivity {
                         }
                     }
 
-                    CountAnimal.setText(CountAnimal.getText() + ": " + animalsArray.size());
+                    CountAnimal.setText(CountAnimal.getText() + "" + animalsArray.size());
 
 
                 } else {

@@ -31,6 +31,8 @@
     <string name="editTextDate">WYBIERZ DATĘ ADOPCJI</string>
     <string name="editTextBio">NOTATKI</string>
     <string name="ButtonAdd">ZAPISZ</string>
+    <!--activity_AddAnimal-->
+    <string name="TextViewKnowledge">ENCYKLOPEDIA</string>
     <!--preferences-->
     <string name="autoLoginPreferenceName">autoLogin</string>
 </resources>

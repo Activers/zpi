@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/maiandra"
                 android:layout_marginBottom="12dp"
-                android:text="@string/TextViewKnowledge"
+                android:text="SSAKI"
                 android:textColor="#EAFBC7"
                 android:textSize="28sp"
                 tools:ignore="RtlHardcoded"
@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/maiandra"
-                    android:text="SSAKI"
+                    android:text="PIES"
                     android:textColor="#506C56"
                     android:textSize="22sp"
                     tools:ignore="RtlHardcoded" />
@@ -98,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/maiandra"
-                    android:text="GADY"
+                    android:text="KOT"
                     android:textColor="#506C56"
                     android:textSize="22sp"
                     tools:ignore="RtlHardcoded" />
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/maiandra"
-                    android:text="PTAKI"
+                    android:text="KRÓLIK"
                     android:textColor="#506C56"
                     android:textSize="22sp"
                     tools:ignore="RtlHardcoded" />
@@ -165,12 +165,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/maiandra"
-                    android:text="PŁAZY"
+                    android:text="CHOMIK"
                     android:textColor="#506C56"
                     android:textSize="22sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -184,25 +185,152 @@
                 android:orientation="vertical" >
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/ImageViewInvertebrates"
+                    android:id="@+id/ImageViewBirds345"
                     android:layout_width="130dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="0dp"
-                    android:src="@drawable/bezkregowce2"
+                    android:layout_weight="1"
+                    android:src="@drawable/ptaki2"
                     app:civ_border_color="#619F60"
                     app:civ_border_width="1dp"/>
+
                 <TextView
-                    android:id="@+id/TextViewAddAnimal6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/maiandra"
-                    android:text="BEZKRĘGOWCE"
+                    android:text="SZYNSZYLA"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ImageViewAmphibians123"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/plazy2"
+                    app:civ_border_color="#619F60"
+                    app:civ_border_width="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="SZCZUR"
                     android:textColor="#506C56"
                     android:textSize="22sp"
                     tools:ignore="RtlHardcoded" />
             </LinearLayout>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ImageViewBirds3485"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ptaki2"
+                    app:civ_border_color="#619F60"
+                    app:civ_border_width="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="MYSZ"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ImageViewAmphibians1253"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/plazy2"
+                    app:civ_border_color="#619F60"
+                    app:civ_border_width="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="ŚWINKA MORSKA"
+                    android:textColor="#506C56"
+                    android:textSize="19sp"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ImageViewBirds348675"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ptaki2"
+                    app:civ_border_color="#619F60"
+                    app:civ_border_width="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/maiandra"
+                    android:text="JEŻ"
+                    android:textColor="#506C56"
+                    android:textSize="22sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
