@@ -193,24 +193,26 @@ public class MyProfile extends AppCompatActivity {
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
                     DocumentSnapshot document = task.getResult();
-                    Username.setText(document.getString("name"));
+                    Username.setText(document.getString("username"));
                     Mail.setText(document.getString("e-mail"));
 
 
                     ArrayList<Map<String,String>> animalsArray = (ArrayList<Map<String,String>>) document.get("animals");
 
-
-                    for (int i=0; i < animalsArray.size(); i++) {
-                        Map<String,String> animalsMap = animalsArray.get(i);
-                        //Toast.makeText(getApplicationContext(), animalsMap.size()+"", Toast.LENGTH_SHORT).show();
-                        if (animalsMap.containsKey("breed"))
-                            animalModelList.add(new AnimalModel(animalsMap.get("name"),animalsMap.get("type"),animalsMap.get("breed"),animalsMap.get("weight"),animalsMap.get("date"),animalsMap.get("bio")));
-                        else {
-                            animalModelList.add(new AnimalModel(animalsMap.get("name"),animalsMap.get("type"),animalsMap.get("weight"),animalsMap.get("date"),animalsMap.get("bio")));
+                    if (animalsArray != null) {
+                        for (int i = 0; i < animalsArray.size(); i++) {
+                            Map<String, String> animalsMap = animalsArray.get(i);
+                            //Toast.makeText(getApplicationContext(), animalsMap.size()+"", Toast.LENGTH_SHORT).show();
+                            if (animalsMap.containsKey("breed"))
+                                animalModelList.add(new AnimalModel(animalsMap.get("name"), animalsMap.get("type"), animalsMap.get("breed"), animalsMap.get("weight"), animalsMap.get("date"), animalsMap.get("bio")));
+                            else {
+                                animalModelList.add(new AnimalModel(animalsMap.get("name"), animalsMap.get("type"), animalsMap.get("weight"), animalsMap.get("date"), animalsMap.get("bio")));
+                            }
                         }
-                    }
+                        CountAnimal.setText(CountAnimal.getText() + "" + animalsArray.size());
+                    } else { CountAnimal.setText(CountAnimal.getText() + "0"); }
 
-                    CountAnimal.setText(CountAnimal.getText() + "" + animalsArray.size());
+
 
 
                 } else {
