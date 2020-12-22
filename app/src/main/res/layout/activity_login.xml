@@ -23,15 +23,15 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/textViewAppName"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="0dp"
+                android:id="@+id/textViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:text="LOGO"
-                android:textColor="#FFFFFF"
-                android:textSize="55sp"
-                android:textStyle="bold" />
+                android:text="@string/textViewLogo"
+                android:fontFamily="@font/maiandra"
+                android:textColor="#506C56"
+                android:textSize="55sp" />
 
 
         </RelativeLayout>

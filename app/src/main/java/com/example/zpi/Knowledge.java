@@ -73,7 +73,7 @@ public class Knowledge extends AppCompatActivity {
                 if(event.getAction()==MotionEvent.ACTION_DOWN) {
                     Cancel.startAnimation(AnimPull);
                 }else if(event.getAction()==MotionEvent.ACTION_UP){
-                    startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                    onBackPressed();
                     overridePendingTransition(R.anim.slide_in_left,
                             R.anim.slide_out_right);}
                 return true;

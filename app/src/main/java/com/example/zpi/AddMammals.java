@@ -74,7 +74,12 @@ public class AddMammals extends AppCompatActivity {
 
 
 
+
+
         Mammals.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+
+
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 1){

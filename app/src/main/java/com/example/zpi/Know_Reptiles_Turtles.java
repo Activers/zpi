@@ -8,24 +8,19 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageView;
 
-public class Knowledge_Invertebrates extends AppCompatActivity {
+public class Know_Reptiles_Turtles extends AppCompatActivity {
 
-    ImageView Patyczak,Modliszka,Pajak;
-
-    Button Cancel;
-
+    Button Water,Tortoise,Cancel;
     Animation AnimPull;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_knowledge__invertebrates);
+        setContentView(R.layout.activity_know__reptiles__turtles);
 
-        Patyczak = findViewById(R.id.ImageViewInvertePatyczak);
-        Modliszka = findViewById(R.id.ImageViewInverteModliczka);
-        Pajak = findViewById(R.id.ImageViewInvertePajak);
+        Water = findViewById(R.id.buttonTurtleWater);
+        Tortoise = findViewById(R.id.buttonTurtleTortoise);
 
         Cancel = findViewById(R.id.ButtonCancel);
 

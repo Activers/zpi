@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Knowledge_Invertebrates"></activity>
+        <activity android:name=".Knowledge_Profile"></activity>
+        <activity android:name=".Know_Reptiles_Lizards" />
+        <activity android:name=".Know_Reptiles_Turtles" />
+        <activity android:name=".Know_Reptiles_Snakes" />
+        <activity android:name=".Know_Mammals_Cats" />
+        <activity android:name=".Know_Mammals_Dogs" />
+        <activity android:name=".Knowledge_Invertebrates" />
         <activity android:name=".Knowledge_Amphibians" />
         <activity android:name=".Knowledge_Birds" />
         <activity android:name=".Knowledge_Reptiles" />
