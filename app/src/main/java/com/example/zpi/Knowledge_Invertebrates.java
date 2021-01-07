@@ -2,6 +2,7 @@ package com.example.zpi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -30,6 +31,14 @@ public class Knowledge_Invertebrates extends AppCompatActivity {
         Cancel = findViewById(R.id.ButtonCancel);
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
+
+
+        Patyczak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),knowledge_inverte_profile.class));
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override
