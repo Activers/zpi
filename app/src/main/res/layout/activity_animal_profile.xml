@@ -122,7 +122,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="30dp"
                     android:textSize="20sp"
-                    android:background="#548C54"
+                    android:background="@drawable/bg_animal_buttom"
                     android:textStyle="bold"
                     android:layout_gravity="top|left">
 
@@ -175,7 +175,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="30dp"
                     android:textSize="20sp"
-                    android:background="#548C54"
+                    android:background="@drawable/bg_animal_buttom"
                     android:textStyle="bold"
                     android:layout_gravity="top|left">
 
@@ -228,7 +228,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="30dp"
                     android:textSize="20sp"
-                    android:background="#548C54"
+                    android:background="@drawable/bg_animal_buttom"
                     android:textStyle="bold"
                     android:layout_gravity="top|left">
 
@@ -282,7 +282,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="30dp"
                     android:textSize="20sp"
-                    android:background="#548C54"
+                    android:background="@drawable/bg_animal_buttom"
                     android:textStyle="bold"
                     android:layout_gravity="top|left">
 
