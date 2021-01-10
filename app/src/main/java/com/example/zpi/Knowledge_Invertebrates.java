@@ -36,7 +36,7 @@ public class Knowledge_Invertebrates extends AppCompatActivity {
         Patyczak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),knowledge_inverte_profile.class));
+                startActivity(new Intent(getApplicationContext(), Knowledge_inverte_profile.class));
             }
         });
 

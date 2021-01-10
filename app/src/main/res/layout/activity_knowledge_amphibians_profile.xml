@@ -36,7 +36,7 @@
             android:background="@drawable/bg_knowledge_image"
             android:scaleType="centerInside"
             android:src="@drawable/patyczak"
-             />
+            />
 
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/maiandra"
-            android:text="PATYCZAK"
+            android:text="AKSOLOTL"
             android:textStyle="bold"
             android:textColor="#506C56"
             android:textSize="25sp"

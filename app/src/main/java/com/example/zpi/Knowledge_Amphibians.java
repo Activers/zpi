@@ -2,6 +2,7 @@ package com.example.zpi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,7 +13,7 @@ import android.widget.ImageView;
 
 public class Knowledge_Amphibians extends AppCompatActivity {
 
-    ImageView Aksolot;
+    ImageView Aksolotl;
 
     Button Cancel;
 
@@ -23,11 +24,18 @@ public class Knowledge_Amphibians extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge__amphibians);
 
-        Aksolot = findViewById(R.id.ImageViewAmphibiansAksolot);
+        Aksolotl = findViewById(R.id.ImageViewAmphibiansAksolot);
 
         Cancel = findViewById(R.id.ButtonCancel);
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
+
+        Aksolotl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Knowledge_Amphibians_Profile.class));
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override

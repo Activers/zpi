@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/maiandra"
-                    android:text="AKSOLOT"
+                    android:text="AKSOLOTL"
                     android:textColor="#506C56"
                     android:textSize="22sp"
                     tools:ignore="RtlHardcoded" />

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.widget.TextView;
 
-public class knowledge_inverte_profile extends AppCompatActivity {
+public class Knowledge_inverte_profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
