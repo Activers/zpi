@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -29,7 +30,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Transaction;
 import com.google.firebase.firestore.auth.User;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -37,7 +41,9 @@ import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 import java.lang.reflect.Array;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -57,6 +63,8 @@ public class MyProfile extends AppCompatActivity {
     FirebaseAuth fAuth;
     StorageReference fStorage;
     FirebaseFirestore fStore;
+
+    boolean deleteAllowed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +107,8 @@ public class MyProfile extends AppCompatActivity {
 
         GetProfileDataFromFirebase();
 
+        deleteAllowed = true;
+
         try {
             recyclerAdapter.setOnItemClickListener(new RecyclerAdapter.OnItemClickedListener() {
                 @Override
@@ -111,6 +121,33 @@ public class MyProfile extends AppCompatActivity {
                     intent.putExtra("animalDate",animalModelList.get(position).getAnimalDate());
                     intent.putExtra("animalBio",animalModelList.get(position).getAnimalBio());
                     startActivity(intent);
+                }
+
+                boolean deleteGameDoubleClick = false;
+                int lastPosition;
+
+                @Override
+                public void onDeleteClick(int position) {
+                    if (deleteAllowed) {
+                        if (deleteGameDoubleClick && lastPosition == position) { // dodany bajer ze trzeba nacisnac szybko dwukrotnie ikone aby usunac - zabezpieczenie przed missclickami
+                            deleteGameDoubleClick = false;
+                            RemoveItem(position);
+                            //Toast.makeText(MyProfile.this, "Usuwam item", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
+                        this.deleteGameDoubleClick = true;
+                        this.lastPosition = position;
+                        Toast.makeText(MyProfile.this, "Naciśnij ponownie, aby usunąć", Toast.LENGTH_SHORT).show();
+
+                        new Handler().postDelayed(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                deleteGameDoubleClick = false;
+                            }
+                        }, 700);
+                    }
                 }
             });
 
@@ -227,6 +264,51 @@ public class MyProfile extends AppCompatActivity {
         });
         // koniec rzeczy zwiazanych z baza
     }
+
+    private void RemoveItem(final int position) {
+
+        deleteAllowed = false;
+
+        final DocumentReference usersDocRef = fStore.collection("users").document(fAuth.getCurrentUser().getUid());
+
+        final ArrayList<Map<String, String>>[] mapList = new ArrayList[]{new ArrayList<>()};
+
+        fStore.runTransaction(new Transaction.Function<Void>() {
+            @Nullable
+            @Override
+            public Void apply(@NonNull Transaction transaction) throws FirebaseFirestoreException {
+                DocumentSnapshot document = transaction.get(usersDocRef);
+
+                mapList[0] = (ArrayList<Map<String,String>>) document.get("animals");
+                mapList[0].remove(position);
+
+                return null;
+            }
+        }).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    usersDocRef.update("animals", mapList[0]).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                //deleteItem[0] = true;
+                                animalModelList.remove(position);
+                                CountAnimal.setText("LICZBA ZWIERZAKÓW: " + animalModelList.size());
+                                recyclerAdapter.notifyItemRemoved(position);
+                                //Toast.makeText(MyProfile.this, "Zwierzę usunięte z pozycji: " + position, Toast.LENGTH_SHORT).show();
+                                Log.d(TAG, "Zwierzę usunięte z pozycji: " + position);
+                            }
+                            deleteAllowed = true;
+                        }
+                    });
+                }
+                else { Log.d(TAG,"TRANSACTION ERROR: " + task.getException()); deleteAllowed = true; }
+            }
+        });
+
+    }
+
 
 
     public void onBackPressed() {

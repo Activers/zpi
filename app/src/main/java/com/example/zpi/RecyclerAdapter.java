@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,6 +23,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     public interface OnItemClickedListener {
         void onItemClick(int position);
+        void onDeleteClick(int position);
     }
 
     public void setOnItemClickListener(OnItemClickedListener listener) {
@@ -59,7 +61,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         TextView textViewPetName;
         TextView textViewPetType;
-        ImageView imageViewPetAvatar;
+        ImageView imageViewPetAvatar, imageViewPetDelete;
+        LinearLayout linearLayoutPet;
 
         public ViewHolder(@NonNull View itemView, final OnItemClickedListener listener) {
             super(itemView);
@@ -67,6 +70,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             textViewPetName = itemView.findViewById(R.id.textViewPetName);
             textViewPetType = itemView.findViewById(R.id.textViewPetType);
             imageViewPetAvatar = itemView.findViewById(R.id.imageViewPetAvatar);
+            imageViewPetDelete = itemView.findViewById(R.id.imageViewPetDelete);
+            linearLayoutPet = itemView.findViewById(R.id.linearLayoutPet);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -75,6 +80,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                         int position = getAdapterPosition();
                         if (position != RecyclerView.NO_POSITION) {
                             listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+
+            imageViewPetDelete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (listener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onDeleteClick(position);
                         }
                     }
                 }

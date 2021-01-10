@@ -17,6 +17,7 @@
     app:cardBackgroundColor="#EAFBC7">
 
     <LinearLayout
+        android:id="@+id/linearLayoutPet"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -60,6 +61,12 @@
                 android:textSize="15sp" />
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewPetDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_delete" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
