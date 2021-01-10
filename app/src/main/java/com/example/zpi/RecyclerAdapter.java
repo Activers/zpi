@@ -1,6 +1,7 @@
 package com.example.zpi;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         holder.textViewPetName.setText(animalModelList.get(position).getAnimalName());
         holder.textViewPetType.setText(animalModelList.get(position).getAnimalType());
+        holder.imageViewPetAvatar.setImageResource(animalModelList.get(position).getAnimalAvatar());
     }
 
     @Override
@@ -100,4 +102,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         }
     }
+
+
 }

@@ -114,6 +114,7 @@ public class MyProfile extends AppCompatActivity {
                 @Override
                 public void onItemClick(int position) {
                     Intent intent = new Intent(getApplicationContext(),AnimalProfile.class);
+                    intent.putExtra("animalAvatar",animalModelList.get(position).getAnimalAvatar());
                     intent.putExtra("animalName",animalModelList.get(position).getAnimalName());
                     intent.putExtra("animalType",animalModelList.get(position).getAnimalType());
                     intent.putExtra("animalBreed",animalModelList.get(position).getAnimalBreed());

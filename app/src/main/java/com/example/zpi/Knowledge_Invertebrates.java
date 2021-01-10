@@ -36,9 +36,33 @@ public class Knowledge_Invertebrates extends AppCompatActivity {
         Patyczak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Knowledge_inverte_profile.class));
+                Intent intent = new Intent(getApplicationContext(), Knowledge_inverte_profile.class);
+                intent.putExtra("animalType", "PATYCZAK");
+                startActivity(intent);
             }
         });
+
+        Modliszka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_inverte_profile.class);
+                intent.putExtra("animalType", "MODLISZKA");
+                startActivity(intent);
+            }
+        });
+
+        Pajak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_inverte_profile.class);
+                intent.putExtra("animalType", "PAJĄK");
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override
