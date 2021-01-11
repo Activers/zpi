@@ -2,6 +2,7 @@ package com.example.zpi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -25,6 +26,23 @@ public class Know_Reptiles_Snakes extends AppCompatActivity {
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
 
+        Anakonda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Reptiles_Profile.class);
+                intent.putExtra("animalType", "ANAKONDA");
+                startActivity(intent);
+            }
+        });
+
+        Boa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Reptiles_Profile.class);
+                intent.putExtra("animalType", "WĄŻ BOA");
+                startActivity(intent);
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override

@@ -148,7 +148,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_animal_buttom"
             android:fontFamily="@font/maiandra"
-            android:text="GOLDER RETRIEVER"
+            android:text="GOLDEN RETRIEVER"
             android:textColor="#E3FFDD"
             android:textSize="24sp" />
 

@@ -17,7 +17,7 @@
     <string name="textViewReset">ZRESETUJ SWOJE HASŁO</string>
     <string name="buttonReset">ZRESETUJ</string>
     <!--activity_Dashboard-->
-    <string name="textViewLogo">MÓJ ZWIERZAK</string>
+    <string name="textViewLogo">MÓJ\nZWIERZAK</string>
     <string name="buttonMyProfile">MÓJ PROFIL</string>
     <string name="buttonKnowledge">WIEDZA</string>
     <string name="buttonVet">WETERYNARZ</string>

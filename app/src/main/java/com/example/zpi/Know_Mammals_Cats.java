@@ -2,6 +2,7 @@ package com.example.zpi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -35,7 +36,95 @@ public class Know_Mammals_Cats extends AppCompatActivity {
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
 
+        Dachowiec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "DACHOWIEC");
+                startActivity(intent);
+            }
+        });
 
+        Brytyjski.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "BRYTYJSKI KROTKOWŁOSY");
+                startActivity(intent);
+            }
+        });
+
+        Cornish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "CORNISH REX");
+                startActivity(intent);
+            }
+        });
+
+        Sfinks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "DOŃSKI SFINKS");
+                startActivity(intent);
+            }
+        });
+
+        Bobtail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "JAPOŃSKI BOBTAIL");
+                startActivity(intent);
+            }
+        });
+
+        Korat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "KORAT");
+                startActivity(intent);
+            }
+        });
+
+        Mau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "EGIPSKI MAU");
+                startActivity(intent);
+            }
+        });
+
+        Himalajski.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "HIMALAJSKI");
+                startActivity(intent);
+            }
+        });
+
+        Tiffanie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "TIFFANIE");
+                startActivity(intent);
+            }
+        });
+
+        Birmanski.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "ŚWIĘTY BIRMAŃSKI");
+                startActivity(intent);
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override

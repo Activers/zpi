@@ -2,6 +2,7 @@ package com.example.zpi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -26,6 +27,33 @@ public class Know_Reptiles_Lizards extends AppCompatActivity {
         Cancel = findViewById(R.id.ButtonCancel);
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
+
+        Gekon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Reptiles_Profile.class);
+                intent.putExtra("animalType", "GEKON LAMPARCI");
+                startActivity(intent);
+            }
+        });
+
+        Kameleon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Reptiles_Profile.class);
+                intent.putExtra("animalType", "KAMELEON JEMEŃSKI");
+                startActivity(intent);
+            }
+        });
+
+        Legwan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Reptiles_Profile.class);
+                intent.putExtra("animalType", "LEGWAN ZIELONY");
+                startActivity(intent);
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override

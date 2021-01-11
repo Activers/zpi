@@ -2,6 +2,7 @@ package com.example.zpi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,7 +13,7 @@ import android.widget.ImageView;
 
 public class Knowledge_Birds extends AppCompatActivity {
 
-    ImageView Papuga,Kanarek;
+    Button Papuga,Kanarek;
 
     Button Cancel;
 
@@ -23,12 +24,30 @@ public class Knowledge_Birds extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowledge__birds);
 
-        Papuga = findViewById(R.id.ImageViewBirdPapuga);
-        Kanarek = findViewById(R.id.ImageViewBirdKanarek);
+        Papuga = findViewById(R.id.buttonBirdAra);
+        Kanarek = findViewById(R.id.buttonBirdKanarek);
 
         Cancel = findViewById(R.id.ButtonCancel);
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
+
+        Papuga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Birds_Profile.class);
+                intent.putExtra("animalType", "PAPUGA ARA");
+                startActivity(intent);
+            }
+        });
+
+        Kanarek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Birds_Profile.class);
+                intent.putExtra("animalType", "KANAREK");
+                startActivity(intent);
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override

@@ -10,10 +10,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:focusable="false"
         android:focusableInTouchMode="true"
-        android:gravity="center"
         android:orientation="vertical"
         android:weightSum="10">
 
@@ -36,72 +35,44 @@
                 android:textSize="28sp"
                 tools:ignore="RtlHardcoded"
                 />
-
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:padding="15dp">
+            android:layout_width="match_parent">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:layout_weight="1"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical" >
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/ImageViewBirdPapuga"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/ssaki2"
-                    app:civ_border_color="#619F60"
-                    app:civ_border_width="1dp" />
-
-                <TextView
-                    android:id="@+id/TextViewAddAnimal2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                <Button
+                    android:id="@+id/buttonBirdAra"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/bg_animal_buttom"
                     android:fontFamily="@font/maiandra"
                     android:text="PAPUGA ARA"
-                    android:textColor="#506C56"
-                    android:textSize="22sp"
-                    tools:ignore="RtlHardcoded" />
-            </LinearLayout>
+                    android:textColor="#E3FFDD"
+                    android:textSize="24sp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:orientation="vertical" >
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/ImageViewBirdKanarek"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/gady2"
-                    app:civ_border_color="#619F60"
-                    app:civ_border_width="1dp" />
-
-                <TextView
-                    android:id="@+id/TextViewAddAnimal3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
+                <Button
+                    android:id="@+id/buttonBirdKanarek"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/bg_animal_buttom"
                     android:fontFamily="@font/maiandra"
                     android:text="KANAREK"
-                    android:textColor="#506C56"
-                    android:textSize="22sp"
-                    tools:ignore="RtlHardcoded" />
+                    android:textColor="#E3FFDD"
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -130,5 +101,6 @@
 
 
     </LinearLayout>
+
 
 </ScrollView>

@@ -168,7 +168,7 @@ public class MyProfile extends AppCompatActivity {
         IconBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Dashboard.class));
+                onBackPressed();
                 overridePendingTransition(R.anim.slide_in_left,
                         R.anim.slide_out_right);
             }

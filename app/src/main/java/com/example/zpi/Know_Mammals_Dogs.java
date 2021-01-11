@@ -35,9 +35,95 @@ public class Know_Mammals_Dogs extends AppCompatActivity {
 
         AnimPull = AnimationUtils.loadAnimation(this,R.anim.pull_anim);
 
+        Alaskan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "ALASKAN MALAMUTE");
+                startActivity(intent);
+            }
+        });
 
+        Pasterski.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "BERNEŃSKI PIES PASTERSKI");
+                startActivity(intent);
+            }
+        });
 
+        Bernardyn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "BERNARDYN");
+                startActivity(intent);
+            }
+        });
 
+        Bichon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "BICHON FRISE");
+                startActivity(intent);
+            }
+        });
+
+        Bulterier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "BULTERIER");
+                startActivity(intent);
+            }
+        });
+
+        ChowChow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "CHOW CHOW");
+                startActivity(intent);
+            }
+        });
+
+        Dalmatynczyk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "DALMATYŃCZYK");
+                startActivity(intent);
+            }
+        });
+
+        Maremma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "OWCZAREK MAREMMA");
+                startActivity(intent);
+            }
+        });
+
+        Husky.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "HUSKY SYBERYJSKI");
+                startActivity(intent);
+            }
+        });
+
+        Golden.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Knowledge_Mammals_Profile.class);
+                intent.putExtra("animalType", "GOLDEN RETRIEVER");
+                startActivity(intent);
+            }
+        });
 
         Cancel.setOnTouchListener(new View.OnTouchListener() {
             @Override

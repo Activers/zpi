@@ -52,7 +52,7 @@
             android:selectAllOnFocus="false"
             android:singleLine="false"
             android:textColor="#506C56"
-            android:textColorHint="#88A882"
+            android:textColorHint="#506C56"
             android:textSize="20sp" />
 
         <Spinner
@@ -80,7 +80,7 @@
             android:selectAllOnFocus="false"
             android:singleLine="false"
             android:textColor="#506C56"
-            android:textColorHint="#88A882"
+            android:textColorHint="#506C56"
             android:textSize="20sp" />
 
         <EditText
@@ -98,7 +98,7 @@
             android:selectAllOnFocus="false"
             android:singleLine="false"
             android:textColor="#506C56"
-            android:textColorHint="#88A882"
+            android:textColorHint="#506C56"
             android:textSize="20sp" />
 
         <EditText
@@ -121,7 +121,7 @@
             android:singleLine="false"
             android:fontFamily="@font/maiandra"
             android:textColor="#506C56"
-            android:textColorHint="#88A882"
+            android:textColorHint="#506C56"
             android:textSize="20sp"/>
 
 

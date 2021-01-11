@@ -1,8 +1,10 @@
 package com.example.zpi;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -74,18 +76,18 @@ public class AddMammals extends AppCompatActivity {
 
 
 
-
-
         Mammals.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
 
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
                 if(position == 1){
                     MammalsBreed.setVisibility(View.VISIBLE);
                     MammalsBreed.setAdapter(adapterDogs);
                     BreedBool = true;
+
                 }
                 if(position == 2){
                     MammalsBreed.setVisibility(View.VISIBLE);

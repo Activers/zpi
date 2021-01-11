@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_profile"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/ImageViewIconBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/back_line"
+            tools:ignore="RtlHardcoded" />
+
+
+        <ImageView
+            android:id="@+id/ImageViewImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/bg_knowledge_image"
+            android:scaleType="centerInside"
+            />
+
+
+        <TextView
+            android:id="@+id/TextViewAnimalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/maiandra"
+            android:textStyle="bold"
+            android:textColor="#506C56"
+            android:textSize="25sp"
+            tools:ignore="RtlHardcoded"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:background="#EAFBC7"
+                    android:layout_gravity="bottom|right">
+
+                    <TextView
+                        android:id="@+id/TextViewDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="#506C56"
+                        android:fontFamily="@font/maiandra"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_animal_buttom"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="OPIS OGÓLNY"
+                        android:textColor="#EAFBC7"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/maiandra"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:background="#EAFBC7"
+                    android:layout_gravity="bottom|right">
+
+                    <TextView
+                        android:id="@+id/TextViewLive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="#506C56"
+                        android:fontFamily="@font/maiandra"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_animal_buttom"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DŁUGOŚĆ ŻYCIA"
+                        android:textColor="#EAFBC7"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/maiandra"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:background="#EAFBC7"
+                    android:layout_gravity="bottom|right">
+
+                    <TextView
+                        android:id="@+id/TextViewSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="#506C56"
+                        android:fontFamily="@font/maiandra"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_animal_buttom"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ROZMIAR"
+                        android:textColor="#EAFBC7"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/maiandra"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:background="#EAFBC7"
+                    android:layout_gravity="bottom|right">
+
+                    <TextView
+                        android:id="@+id/TextViewWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="#506C56"
+                        android:fontFamily="@font/maiandra"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_animal_buttom"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="WAGA"
+                        android:textColor="#EAFBC7"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/maiandra"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:background="#EAFBC7"
+                    android:layout_gravity="bottom|right">
+
+                    <TextView
+                        android:id="@+id/TextViewTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="#506C56"
+                        android:fontFamily="@font/maiandra"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_animal_buttom"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TEMPERATURA"
+                        android:textColor="#EAFBC7"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/maiandra"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:background="#EAFBC7"
+                    android:layout_gravity="bottom|right">
+
+                    <TextView
+                        android:id="@+id/TextViewLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="#506C56"
+                        android:fontFamily="@font/maiandra"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/bg_animal_buttom"
+                    android:textStyle="bold"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="OŚWIETLENIE"
+                        android:textColor="#EAFBC7"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="26sp"
+                        android:fontFamily="@font/maiandra"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
