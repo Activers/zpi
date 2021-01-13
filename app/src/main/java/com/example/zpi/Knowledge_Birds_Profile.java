@@ -37,7 +37,7 @@ public class Knowledge_Birds_Profile extends AppCompatActivity {
         switch (animalType)
         {
             case "PAPUGA ARA" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.ara);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Ary pochodzą z Ameryki Południowej. Ara ararauna to gatunek, który łatwo oswoić. Dobrze żyją z innymi osobnikami, a kupując swojego, dobrze wybrać takiego, który wychował się w stadzie – łatwiej będzie go oswoić."));
                 textViewLive.setText(Html.fromHtml("Około 50 lat"));
@@ -46,7 +46,7 @@ public class Knowledge_Birds_Profile extends AppCompatActivity {
                 break;
 
             case "KANAREK" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kanarek);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Kanarki uchodzą za łatwe w pielęgnacji, ponieważ w zasadzie potrafią zadbać o siebie same, jeśli tylko zapewnisz im odpowiednie wyposażenie w klatce, takie jak wanienka lub basen, różnej grubości drążki czy minerały i witaminy w postaci np. kości mineralnych."));
                 textViewLive.setText(Html.fromHtml("Około 10 lat"));

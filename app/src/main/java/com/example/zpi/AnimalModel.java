@@ -56,28 +56,28 @@ public class AnimalModel {
         switch (animalType) {
             // Ssaki
             case "PIES":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.pies2;
                 break;
             case "KOT":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.kot2;
                 break;
             case "KRÓLIK":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.krolik2;
                 break;
             case "CHOMIK":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.chomik2;
                 break;
             case "SZYNSZYLA":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.szynszyla2;
                 break;
             case "SZCZUR":
                 animalAvatar = R.drawable.szczur;
                 break;
             case "MYSZ":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.szczur;
                 break;
             case "ŚWINKA MORSKA":
-                animalAvatar = R.drawable.ssaki2;
+                animalAvatar = R.drawable.swinkamorska2;
                 break;
             case "JEŻ":
                 animalAvatar = R.drawable.jez;
@@ -87,7 +87,7 @@ public class AnimalModel {
                 animalAvatar = R.drawable.gady2;
                 break;
             case "ŻÓŁW":
-                animalAvatar = R.drawable.gady2;
+                animalAvatar = R.drawable.zolw2;
                 break;
             case "JASZCZURKA":
                 animalAvatar = R.drawable.gady2;

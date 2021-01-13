@@ -35,7 +35,7 @@
             android:layout_height="140dp"
             android:background="@drawable/bg_knowledge_image"
             android:scaleType="centerInside"
-            android:src="@drawable/patyczak"
+            android:src="@drawable/aksolotl"
             />
 
 

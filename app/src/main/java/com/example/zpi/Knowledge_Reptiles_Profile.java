@@ -95,7 +95,7 @@ public class Knowledge_Reptiles_Profile extends AppCompatActivity {
             case "GEKON LAMPARCI" :
                 Temp.setVisibility(View.GONE);
                 Light.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.gekon);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Gekon lamparci to najpopularniejszy z gekonów hodowanych w warunkach domowych. Jego spokojna, ciekawska natura sprawia, że gad ten uchodzi za zwierzę łatwe do oswojenia przez człowieka. Dlatego też dla początkującego terrarysty zakup właśnie gekona lamparciego jest jedną z najlepszych opcji."));
                 textViewLive.setText(Html.fromHtml("15 lat"));
@@ -106,7 +106,7 @@ public class Knowledge_Reptiles_Profile extends AppCompatActivity {
             case "KAMELEON JEMEŃSKI" :
                 Temp.setVisibility(View.GONE);
                 Light.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kameleon);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Kameleon jemeński pochodzi z Afryki – na wolności żyje w okolicach Jemenu oraz w Arabii Saudyjskiej oraz na Madagaskarze. Zamieszkuje tereny tropikalne i zwykle znaleźć go można na drzewach i zaroślach. Posiada długi i lepki język, który służy do polowania. Samiec jest zawsze bardziej kolorowy – w jego ubarwieniu przeważa zieleń z akcentami żółci, czerwieni, pomarańczu, brązu i niebieskiego. U samicy także przeważa zieleń i pojawiają się plamki w kolorze żółtym, rudym i białym."));
                 textViewLive.setText(Html.fromHtml("5 - 7 lat"));
@@ -117,7 +117,7 @@ public class Knowledge_Reptiles_Profile extends AppCompatActivity {
             case "LEGWAN ZIELONY" :
                 Temp.setVisibility(View.GONE);
                 Light.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.legwan);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Legwan zielony jest piękną, dużą jaszczurką żyjącą na konarach i gałęziach drzew. Wywodzi się z Ameryki Środkowej i Południowej, zamieszkuje tereny od Meksyku po Paragwaj. Występuje też na Wyspach Karaibskich. Legwana zielonego spotkać można również w południowych stanach USA – na Florydzie czy w Teksasie, a także na Hawajach."));
                 textViewLive.setText(Html.fromHtml("Około 30 lat"));

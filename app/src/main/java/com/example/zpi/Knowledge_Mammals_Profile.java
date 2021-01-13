@@ -271,7 +271,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "KRÓLIK" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.krolik);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Króliki domowe zaliczane są do jednych z najbardziej popularnych i lubianych zwierząt domowych na całym świecie. Trudno się temu dziwić, biorąc pod uwagę, jak uroczo wyglądają ze swoimi miękkimi futerkami, długimi uszkami i łagodnym spojrzeniem. Poza tym uchodzą za towarzyskie, łatwe w pielęgnacji i niedrogie w utrzymaniu."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 1 - 2 lata"));
@@ -282,7 +282,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "CHOMIK" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.chomik);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Sympatyczny i niedrogi w utrzymaniu chomik to świetny kandydat na domowego pupila. Szybko się oswaja, jest przyjazny oraz nie wymaga dużego zaangażowania. Chomiki to dobrze znane nam gryzonie. Dalekimi krewnymi chomików są np. różne gatunki myszowatych, w tym mysz domowa."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 1 - 3 lata"));
@@ -293,7 +293,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "SZYNSZYLA" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.szynszyla);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Szynszyla to popularne zwierzątko domowe, które swoim wyglądem przypomina nieco wiewiórkę. Jest jednak o wiele większa i inaczej umaszczona. Jest stosunkowo tania w utrzymaniu i bardzo towarzyska. Szynszyle to zwierzęta stadne, dlatego najlepiej czują się kiedy mają towarzystwo. Należy im również zapewnić odpowiednie warunki do ruchu, jak również należy pamiętać że najbardziej aktywne są w godzinach nocnych. Są to również jedne z najczystszych zwierząt domowych. Jednak nie są one zwierzętami, które może mieć każdy- nie przepadają one za dziećmi, lubią swoją wolność, nie lubią być przymuszane do czegokolwiek, to czy szynszyla pozwoli się swojemu właścicielowi pogłaskać, podrapać, wziąć na ręce zależy tylko i wyłącznie od jej humoru i charakteru, nie wolno ich do niczego zmuszać siłą. Hodowla szynszyli również jest trudna i wymaga ogromnego doświadczenia."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 10 - 20 lat"));
@@ -304,7 +304,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "SZCZUR" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.szczur2);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Szczur domowy to wspaniały towarzysz zarówno dla dzieci, jak i dla dorosłych. Gryzonie te nie są bardzo wymagające, zajmują niewiele miejsca, a w dodatku są bardzo przyjazne, inteligentne i łatwe do oswojenia."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 1 - 3 lat"));
@@ -315,7 +315,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "MYSZ" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.mysz);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Mysz domowa to zwierzę, które Polacy dość często wybierają w sklepach zoologicznych, by później sprawować nad nim opiekę. Gryzonie, które hoduje się w domach są udomowioną formą myszy domowej (forma laboratoryjna). Jak sama nazwa wskazuje, zanim myszy zaczęto traktować jako domowe pupile, hodowano w laboratoriach na potrzeby badań."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 1 - 4 lat"));

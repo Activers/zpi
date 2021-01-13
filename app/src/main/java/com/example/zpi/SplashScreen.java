@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class SplashScreen extends AppCompatActivity {
 
     Animation topAnim, bottomAnim;
     TextView Logo;
+    ImageView Logo2;
     Intent intent;
 
     FirebaseAuth fAuth;
@@ -42,10 +44,12 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         Logo = findViewById(R.id.textViewAppName);
+        Logo2 =findViewById(R.id.ImageViewLogo);
         intent = new Intent(SplashScreen.this,  Login.class);
 
         bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
-        Logo.setAnimation(bottomAnim);
+        //Logo.setAnimation(bottomAnim);
+        //Logo2.setAnimation(bottomAnim);
 
         String AUTO_LOGIN_PREF_NAME = getString(R.string.autoLoginPreferenceName); // nazwa preferencji / pliku gdzie skladowane beda klucz-wartosc
         preferences = getSharedPreferences(AUTO_LOGIN_PREF_NAME, MODE_PRIVATE);

@@ -50,7 +50,7 @@ public class Knowledge_inverte_profile extends AppCompatActivity {
                 break;
 
             case "MODLISZKA" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.modliszka);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Hodowla modliszek wymaga separacji podrośniętych osobników z uwagi na duże skłonności kanibalistyczne. Wspólnie można trzymać młode do 3-4 wylinki (oczywiście pod warunkiem zapewnienia obfitości pokarmu) oraz samce większości gatunków."));
                 textViewLive.setText(Html.fromHtml("Około 1 roku"));
