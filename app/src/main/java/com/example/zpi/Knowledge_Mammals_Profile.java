@@ -50,7 +50,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
         switch (animalType)
         {
             case "ALASKAN MALAMUTE" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Alaskan malamute to jedna z najstarszych ras arktycznych. Ten pies zaprzęgowy używany był niegdyś do ciągnięcia ładunków. Obecnie funkcja ta nie ma już zastosowania, a współczesne zawody psów zaprzęgowych wymagają dużej szybkości, biorą w nich zatem udział bardziej zwinne i smukłe rasy (takie jak husky). Z tego powodu malamut to dzisiaj głównie pies do towarzystwa i wystawowy. Malamut jest wyjątkowo łagodny i czuły wobec swoich bliskich."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 14 lat"));
@@ -61,7 +61,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "BERNEŃSKI PIES PASTERSKI" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Pochodzący ze Szwajcarii berneńczyk to duży pies o imponującym wyglądzie. Jest równie silny, co łagodny, więc sprawi radość każdemu właścicielowi. Ma słaby instynkt łowiecki i doskonale sprawdza się jako stróż. Świetnie nadaje się do życia na wsi, o ile zadbamy o zaspokojenie jego zapotrzebowania na aktywność fizyczną i umysłową."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 8 i 10 lat"));
@@ -72,7 +72,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "BERNARDYN" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Bernardyn jest molosem w typie górskim, charakteryzuje się masywną budową ciała. Z uwagi na swoje pochodzenie i predyspozycje jest świetnym stróżem. Na co dzień to bardzo spokojny czworonóg, który doskonale czuje się towarzystwie innych psów. Akceptuje także koty."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 8 i 10 lat"));
@@ -83,7 +83,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "BICHON FRISE" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Bichon frise to typowy pies do towarzystwa. Niewielki, żywiołowy o przyjaznym usposobieniu świetnie sprawdza się w charakterze pupila całej rodziny. Bichon frise jest bardzo czuły. Uwielbia pieszczoty i wspólne zabawy. Bardzo dobrze dogaduje się zarówno z dziećmi, jak i osobami starszymi. Nie jest też konfliktowy w stosunku do innych zwierząt zamieszkujących wspólne gospodarstwo. Choć bywa uparty, bardzo szybko się uczy i jest posłuszny."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 14 lat"));
@@ -94,7 +94,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "BULTERIER" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Ten kompaktowy, umięśniony i pełen energii pies, wbrew powszechnym opiniom, wcale nie jest niebezpieczny. Jego reakcje mogą czasem nie przystawać do sytuacji, ale bulterier to uroczy, skory do zabawy i niezwykle przywiązany do swoich bliskich pies. Współczesna selekcja dodatkowo umożliwiła złagodzenie awanturniczej natury bulteriera. Mimo wszystko, ta kula niespożytej energii potrzebuje właściciela doświadczonego, aktywnego i mającego dużo czasu."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 10 i 14 lat"));
@@ -105,7 +105,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "CHOW CHOW" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Chow chow to pies o wyjątkowym usposobieniu. Ten niezależny samotnik oddany swojemu panu nigdy lub prawie nigdy nie okazuje czułości. Z natury jest podejrzliwy wobec obcych, sprawdzi się więc jako pies stróżujący. Dyskretny, cichy, niezbyt skory do zabaw czy sportu, zdecydowanie preferuje spokojny tryb życia. Posiada silny temperament, w związku z czym nie jest zalecany dla nowicjuszy – wyszkolenie go może być trudne."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 9 i 12 lat"));
@@ -116,7 +116,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "DALMATYŃCZYK" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Dalmatyńczyk to pies o bardzo charakterystycznym ubarwieniu, przez które ciężko pomylić go z inną rasą. Niezwykle energiczny, silny, szybki i ruchliwy, zdecydowanie jest typem sportowca. Jest inteligentny, czujny, szybko się uczy. Potrafi jednak być też uparty i samodzielny, dlatego wymaga opieki konsekwentnego i stanowczego trenera. Właściwie wychowywany i wcześnie socjalizowany, staje się wiernym i czułym towarzyszem swojego pana, któremu jest posłuszny."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 10 i 12 lat"));
@@ -127,7 +127,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "OWCZAREK MAREMMA" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Maremmano-Abruzzese to pies pasterski wykorzystywany głównie do pilnowania stad owiec i ludzkich gospodarstw. Jest ostrożny, czujny i opiekuńczy w stosunku do swojej rodziny. Nazwa rasy pochodzi od nazw regionów Maremmy i Abruzji, gdzie psy te strzegły owiec już setki lat temu. Opisy psów podobnych do owczarka z Maremmy można znaleźć już w literaturze starożytnego Rzymu."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 11 - 13 lat"));
@@ -138,7 +138,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "HUSKY SYBERYJSKI" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Husky syberyjski tradycyjnie jest wykorzystywany w wyścigach psich zaprzęgów, jednak przede wszystkim pełni rolę psa do towarzystwa. To piękny i łagodny pies, idealny dla miłośników ras pierwotnych, jak najbardziej zbliżonych do wilka. Jest całkowicie niegroźny, bo zaprzyjaźnia się z każdym (nie nadaje się zatem na psa stróżującego). To jednak bardzo niezależny pies."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 14 lat"));
@@ -149,7 +149,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
                 break;
 
             case "GOLDEN RETRIEVER" :
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.pies);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Nadaje się do wielu zadań, jest czuły i przyjazny dla wszystkich. To doskonały towarzysz, zarówno w pracy jak i w domu."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 14 lat"));
@@ -161,7 +161,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "DACHOWIEC" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Jest to najpopularniejsza „rasa” kota. Dachowce są najbardziej odporne na choroby. Koty te są najbardziej różnorodne, co daje im wyjątkowy urok."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 13 - 17 lat"));
@@ -172,7 +172,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "BRYTYJSKI KROTKOWŁOSY" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Ten kot jest ulubieńcem Anglików. Urocza okrągła mordka, pluszowe futerko i wygląd „misia” bez wątpienia mogą oczarować każdego. Gdy jeszcze w starożytności pojawił się na angielskich ziemiach, miał za zadanie tępić szczury. Jego wyjątkowa uroda, a także niebieski kolor futra u najpopularniejszej odmiany sprawiają, że często mylony jest z kartuzem. Kot brytyjski krótkowłosy to niezmiennie bardzo popularna rasa."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 14 - 18 lat"));
@@ -183,7 +183,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "CORNISH REX" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Cornish rex to kot o wydłużonej i smukłej sylwetce charta, obdarzony charakterystycznymi dużymi uszami.  Jego sierść jest również wyjątkowa - futerko reksa przypomina delikatny falisty meszek. Skręcone są nawet jego wąsy. To wyjątkowo łagodny i czuły kot - wspaniały towarzysz rodziny."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 15 lat"));
@@ -194,7 +194,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "DOŃSKI SFINKS" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Pierwszą reakcją ludzi na widok dońskiego sfinksa często jest okrzyk „A cóż to ma być?!”. Rzeczywiście, jego wygląd jest jak najbardziej niezwykły. Tymczasem, przy bliższym poznaniu, nie pozostaje nam nic innego, niż go pokochać. Doński sfinks jest kotem ujmującym zarówno swoim szczególnym wyglądem, jak i charakterem. Bardzo dużo zyskuje, gdy się go lepiej pozna. Oczy w kształcie migdału, szczególna faktura skóry i jej fałdki mogą oczarować albo być odpychające. Jedno jest pewne - wobec takiej oryginalności nikt nie pozostanie obojętny."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 15 lat"));
@@ -205,7 +205,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "JAPOŃSKI BOBTAIL" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Słowo „bobtail” pochodzi od angielskiego „bobbed tail” i znaczy „skrócony ogonek”. Japoński bobtail jest więc dokładnie taki, jak wskazuje nazwa tej rasy - to kot, który pochodzi z Japonii i ma, w naturalny sposób, ogon znacznie krótszy, niż przeciętny domowy kot. Rzeczywiście, ogonek bobtaila jest nie tylko krótki, ale w dodatku skręcony, przez co tworzy swoisty pomponik u dołu grzbietu, wyjątkowy i niepowtarzalny niczym odcisk palca. Jest to rasa mało rozpowszechniona w Europie, a warto ją bliżej poznać. Japoński bobtail jest kotem wyjątkowo radosnym, energicznym i ujmującym, nie powinno więc dziwić, że w Kraju Kwitnącej Wiśni symbolizuje szczęście."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 14 i 16 lat"));
@@ -216,7 +216,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "KORAT" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Korat, w Tajlandii nazywany „Si-Sawat” (kolor pomyślności), fascynuje pełnymi blasku zielonymi oczami oraz niebieską, lekko posrebrzaną szatą, która według tajskich wierzeń ludowych, przynosi szczęście i symbolizuje bogactwo."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 15 i 20 lat"));
@@ -227,7 +227,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "EGIPSKI MAU" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Jest to jedna z najstarszych odnotowanych ras kota domowego. Ma on lekko zmartwioną minę oraz spokojny i uległy temperament. Bardzo lubi ludzi i nie jest agresywny w stosunku do człowieka."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 14 i 18 lat"));
@@ -238,7 +238,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "HIMALAJSKI" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Jego nazwa wywodzi się od rasy domowego królika o identycznej szacie. Kot himalajski jest jednak po prostu persem ze znaczeniami typu syjamskiego. Jest szczególnie ceniony po drugiej stronie Atlantyku, gdzie uważa się go za odrębną rasę. Kraje europejskie natomiast od lat osiemdziesiątych klasyfikują go jako odmianę kota perskiego."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 10 i 15 lat"));
@@ -249,7 +249,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "TIFFANIE" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Tiffanie jest dosyć rzadko spotykaną rasą pochodzącą z Wielkiej Brytanii. To długowłosa odmiana kota burmskiego w typie europejskim."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 15 lat"));
@@ -260,7 +260,7 @@ public class Knowledge_Mammals_Profile extends AppCompatActivity {
 
             case "ŚWIĘTY BIRMAŃSKI" :
                 FrameSize.setVisibility(View.GONE);
-                imageViewImage.setImageResource(R.drawable.patyczak);
+                imageViewImage.setImageResource(R.drawable.kot);
                 textViewName.setText(animalType);
                 textViewDesc.setText(Html.fromHtml("Pochodzenie tej rasy jest dość niejasne, ale możliwe, że święty kot birmański wywodzi się z Francji. Jego półdługie, jedwabiste futro ma tę wielką zaletę, że się nie plącze. Birmańczyk większość swojego czasu poświęca na pieszczoty z opiekunem, za którym chodzi jak cień. Jest bardzo towarzyski i ma dobry kontakt z ludźmi i zwierzętami w każdym wieku."));
                 textViewLive.setText(Html.fromHtml("Pomiędzy 12 i 15 lat"));
